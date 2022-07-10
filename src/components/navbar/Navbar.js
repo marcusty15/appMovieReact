@@ -1,15 +1,15 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Context } from '../../Store/Store'
-
+import './Navbar.css'
 
 const Navbar = () => {
   const {search, setSearch, films, fav} = useContext(Context)
 
   const peliculasEncontradas =!search ? films : films.filter((personaje) => (personaje.original_title.toLowerCase().includes(search.toLowerCase())));
   return (
-    <nav className="navbar navbar-expand-lg bg-light fixed-top">
-  <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+  <div className="container-fluid ">
     <Link className="navbar-brand" to="/">Logo</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -23,11 +23,11 @@ const Navbar = () => {
           <Link className="nav-link" to="/peliculas">Peliculas</Link>
         </li>
       </ul>
-      <form className="d-flex" role="search">
+      <form className="d-flex me-5" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
         
       </form>
-      <Link to='/favoritos'><span>❤️ {fav}</span></Link>
+      <Link className='me-5' to='/favoritos'><span>❤️ {fav}</span></Link>
     </div>
   </div>
 </nav>

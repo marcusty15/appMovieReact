@@ -13,3 +13,40 @@
     display: block;
     width: 25px;
 }
+.card{
+    height: 280px;
+}
+
+.card:hover {
+    outline: 0px solid transparent;   
+    border: 5px solid #ad40c9;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+  }
+
+.titulo{
+    font-size: 15px;
+    
+}
+img{
+    height: 130px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.botones{
+    position: relative;
+    justify-content: space-between;
+}
+
+.contenedor{
+    
+    position: absolute; bottom: 15px;
+}
+
+.text{
+    font-size: 10px;
+}

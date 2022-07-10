@@ -4,13 +4,13 @@ import { Context } from '../../Store/Store'
 import './Peliculas.css'
 
 const Peliculas = () => {
-    const {films, peliculasEncontradas} = useContext(Context)
+    const {films, peliculasEncontradas, Fav} = useContext(Context)
 
    
 
   return (
 
-    <div className='container'>
+    <div className='container mt-5'>
     <div className='d-flex flex-wrap justify-content-between mt-5'>
     {
         peliculasEncontradas.length > 0 ?

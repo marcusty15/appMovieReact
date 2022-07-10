@@ -1,0 +1,37 @@
+.icon{
+    background: rgba(255, 172, 172, .3);
+    border: 0;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.icon:hover{
+    background: rgba(255,172,172,.8);
+}
+
+.icon span{
+    display: block;
+    width: 40px;
+}
+
+.imag{
+    width: 500px;
+    height: 500px;
+}
+
+.texto{
+    font-size: 30px;
+}
+
+.texto2{
+    font-size: 20px;
+}
+
+.btn{
+    background-color:  rgb(79, 87, 84);
+    color: white;
+}
+
+.formato{
+    background-color: rgb(200, 212, 209);
+}

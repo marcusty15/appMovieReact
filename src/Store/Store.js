@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { createContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import Favoritas from '../Pages/Favoritas/Favoritas';
 
 
 export const Context = createContext(null);
@@ -8,7 +9,7 @@ const UseProvider = ({children}) => {
   const [films, setFilms] = useState([])
   const [search, setSearch] = useState('')
   const [fav, setFav] = useState([])
-  
+  const [favoritos, setFavoritos] = useState([])
   const peliculasEncontradas =!search ? films : films.filter((personaje) => (personaje.original_title.toLowerCase().includes(search.toLowerCase())));
   
   const obtenerPeliculas = async () => {
@@ -18,22 +19,36 @@ const UseProvider = ({children}) => {
     );
     setFilms(response.data.results);
   };
+  console.log(films)
+  const favAdd= (movie) => {
+    let addfilms = favoritos.find(m => m.id === movie.id);
+    
+		if(addfilms){
+      alert("pelicula  ya esta agregada")
+      setFavoritos([...favoritos])
 
-  const Fav = (movie) => {
-		const newFavouriteList = [...fav, movie];
-		setFav(newFavouriteList);
+    } else{
+      setFavoritos([...favoritos, {...movie}])
+      setFav(fav+1)
+    }
 	};
-  console.log(Fav)
+  
+  const borrarFilms = (id) => {
+    setFav(fav-1)
+    return setFavoritos(favoritos.filter((m) => m.id !== id))
+}
+
 
   useEffect(()=>{
     obtenerPeliculas()
   },[])
 
-console.log(films)
+ 
+
 
   return (
     <Context.Provider
-      value={{ films, setFilms, search, setSearch, peliculasEncontradas, fav, setFav, Fav}}
+      value={{ films, setFilms, search, setSearch, peliculasEncontradas, fav, setFav, favAdd, favoritos, setFavoritos, borrarFilms}}
     >
       {children}
     </Context.Provider>
