@@ -7,9 +7,9 @@ import img3 from '../../img/thor.jpg'
 const Titulo = () => {
   return (
     <div className='contendor'>
-      <h2 className=''>bienvenidos</h2>
+      
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner">
+  <div className="carousel-inner mt-4">
     <div className="carousel-item active">
       <img src={img1} className="d-block w-100 img" alt="..."/>
     </div>
@@ -29,8 +29,10 @@ const Titulo = () => {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
-<h1  className='texto-encima'>BIENVENIDOS</h1>
-<p className='texto-encima2'>Millones de peliculas y programas por descubrir</p>
+<div className='saludo'>
+  <h1  className='texto-encima'>BIENVENIDOS</h1>
+  <p className='texto-encima2'>Millones de peliculas y programas por descubrir</p>
+</div>
 </div>
   )
 }

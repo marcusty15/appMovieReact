@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className='mt-5'>
        <div className='pt-1'><Titulo/></div>
-       <h2 className='text-center mb-5 mt-5'>PELICULAS POPULARES</h2>
+       <h2 className='text-center mb-5 mt-5 link'>PELICULAS POPULARES</h2>
        <div className=' bg-dark info pt-5'>
         
       <div className='container'>
