@@ -3,7 +3,8 @@
     border: 0;
     border-radius: 100px;
     cursor: pointer;
-    margin-left: 150px;
+    margin-left: 250px;
+    margin-top: 20px;
 }
 
 .icon:hover{
@@ -44,6 +45,7 @@
 
 .datos{
     background-color: rgba(0, 0, 0, 0.3);
+    margin-right: 150px;
 }
 
 .cardDetails{
@@ -56,4 +58,41 @@
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 4%, rgba(252,176,69,1) 100%);
     font-weight: 700;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+@media  (max-width: 600px) {
+    .imag{
+        display: none;
+    }
+    .texto{
+        font-size: 15px;
+    }
+    .texto2{
+        font-size: 14px;
+        width: 100%;
+
+        margin-right: 100px;
+    }
+    .datos{
+        margin-right: 60px;
+       width:400px;
+        
+    }
+    .icon span{
+        font-size: 15px;
+        
+    }
+    .icon{
+        
+        margin: 0;
+        
+    }
+    .boton{
+        font-size: 10px;
+        margin: 0;
+        
+    }
+    
 }

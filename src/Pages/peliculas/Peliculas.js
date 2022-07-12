@@ -11,7 +11,7 @@ const Peliculas = () => {
   return (
 
     <div className='container ct '>
-    <div className='d-flex flex-wrap justify-content-between'>
+    <div className='d-flex flex-wrap justify-content-around'>
     {
         peliculasEncontradas.length > 0 ?
         peliculasEncontradas.map(movie => (
