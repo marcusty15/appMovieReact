@@ -16,7 +16,7 @@ const CardFilms = (props) => {
         <Link className='link' to={`/movie/${id}`} ><img src={`https://image.tmdb.org/t/p/w500/${backdrop_path}`} className="card-img-top im" alt={original_title} /></Link>
             <h5 className="card-title titulo mt-2 ">{original_title}</h5>
             <div className='d-flex contenedor'>
-            <button className='fav me-5' onClick={() => favAdd(movie) }><span role='img' > ❤️ </span></button>
+            <button className='fav  me-5' onClick={() => favAdd(movie) }><span role='img' > ❤️ </span></button>
             <p className="card-text ms-3 mt-2 mb-1 text">calificacion: ⭐ {vote_average}</p>
             </div>
         </div>

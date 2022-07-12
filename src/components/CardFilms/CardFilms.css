@@ -10,11 +10,11 @@
 }
 
 .fav span{
-    display: block;
+    
     width: 25px;
 }
 .card{
-    height: 280px;
+    height: 300px;
 }
 
 .card:hover {
@@ -29,28 +29,31 @@
   }
 
 .titulo{
-    font-size: 15px;
+    font-size: 14px;
     
 }
 .im{
     height: 130px;
-    padding: 0;
+    
 }
 .link{
     text-decoration: none;
     color: black;
 }
 
-.botones{
-    position: relative;
-    justify-content: space-between;
-}
+
 
 .contenedor{
     
-    position: absolute; bottom: 15px;
+    position: absolute;
+    top: 22%;
 }
 
 .text{
     font-size: 10px;
+}
+@media  (max-width: 600px){
+    .bt{
+        
+    }
 }
