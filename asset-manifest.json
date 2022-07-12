@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/appMovieReact/static/css/main.ccc2a94b.css",
-    "main.js": "/appMovieReact/static/js/main.3218f4f3.js",
+    "main.css": "/appMovieReact/static/css/main.68ca763f.css",
+    "main.js": "/appMovieReact/static/js/main.668eeb88.js",
     "static/js/787.93c83cab.chunk.js": "/appMovieReact/static/js/787.93c83cab.chunk.js",
     "static/media/spiderman.jpg": "/appMovieReact/static/media/spiderman.33a3dabda1f54c562931.jpg",
     "static/media/thor.jpg": "/appMovieReact/static/media/thor.a4d262878da342123cfa.jpg",
     "static/media/minions.jpg": "/appMovieReact/static/media/minions.7eac970e793f2652363b.jpg",
     "index.html": "/appMovieReact/index.html",
-    "main.ccc2a94b.css.map": "/appMovieReact/static/css/main.ccc2a94b.css.map",
-    "main.3218f4f3.js.map": "/appMovieReact/static/js/main.3218f4f3.js.map",
+    "main.68ca763f.css.map": "/appMovieReact/static/css/main.68ca763f.css.map",
+    "main.668eeb88.js.map": "/appMovieReact/static/js/main.668eeb88.js.map",
     "787.93c83cab.chunk.js.map": "/appMovieReact/static/js/787.93c83cab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccc2a94b.css",
-    "static/js/main.3218f4f3.js"
+    "static/css/main.68ca763f.css",
+    "static/js/main.668eeb88.js"
   ]
 }
