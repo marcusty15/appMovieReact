@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 .img{
     height: 600px;
     width: 100%;
@@ -5,4 +6,34 @@
     
 }
 
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
 
+.texto-encima{
+    position: absolute;
+    top: 13%;
+    font-size: 100px;
+    right: 8%;
+    z-index: 1;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(rgb(13, 13, 14),rgb(95, 94, 94),rgb(68, 68, 67));
+    -webkit-background-clip: text;
+    color: transparent;
+   
+}
+
+.texto-encima2{
+    position: absolute;
+    top: 26%;
+    font-size: 25px;
+    right: 8%;
+    z-index: 1;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(rgb(13, 13, 14),rgb(95, 94, 94),rgb(68, 68, 67));
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
