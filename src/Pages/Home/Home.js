@@ -7,8 +7,11 @@ import "./Home.css";
 import CardTop from "../../components/CardFilms/CardTop";
 
 const Home = () => {
-  const { films, moviesTop } = useContext(Context);
-  const filmspopulares = films.filter((film) => film.vote_average >= 7.5);
+  const {peliculasEncontradas, peliculasEncontradas3} = useContext(Context);
+  
+  //variables creadas para filtrar las peliculas con mayor valoracion de votos
+  const filmspopulares = peliculasEncontradas.filter((film) => film.vote_average >= 7.5);
+  const filmspopulares2 = peliculasEncontradas3.filter((film) => film.vote_average >= 7.5);
 
   return (
     <div className="mt-5">
@@ -31,8 +34,8 @@ const Home = () => {
         <h2 className="text-center mb-5 mt-5 link2">PELICULAS TOP</h2>
         <div className="container">
           <div className="d-flex flex-wrap justify-content-around mb-5">
-            {moviesTop.length > 0 ? (
-              moviesTop.map((movie) => (
+            {filmspopulares2.length > 0 ? (
+              filmspopulares2.map((movie) => (
                 <CardTop key={movie.id} {...movie} movie={movie} />
               ))
             ) : (
