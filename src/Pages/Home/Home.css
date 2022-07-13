@@ -5,6 +5,11 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.link2{
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .boton{
     font-size: 20px;
     background: rgb(131,58,180);

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Context } from '../../Store/Store'
+import img from '../../img/pngwing.com.png'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -10,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-3">
   <div className="container-fluid ">
-    <Link className="navbar-brand logo" to="/appMovieReact">🎥</Link>
+    <Link className="navbar-brand" to="/appMovieReact"><img className='logo ms-3' src={img} alt='logo'></img></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

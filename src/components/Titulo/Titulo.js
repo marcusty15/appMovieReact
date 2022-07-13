@@ -1,15 +1,15 @@
 import React from 'react'
 import './Titulo.css'
-import img1 from '../../img/minions.jpg'
-import img2 from '../../img/spiderman.jpg'
-import img3 from '../../img/thor.jpg'
+import img1 from '../../img/dr.jpg'
+import img2 from '../../img/theBig.avif'
+import img3 from '../../img/top.jpg'
 
 const Titulo = () => {
   return (
     <div className='contendor'>
       
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner mt-4">
+  <div className="carousel-inner mt-4 pt-2">
     <div className="carousel-item active">
       <img src={img1} className="d-block w-100 img" alt="..."/>
     </div>
@@ -30,8 +30,8 @@ const Titulo = () => {
   </button>
 </div>
 <div className='saludo'>
-  <h1  className='texto-encima'>BIENVENIDOS</h1>
-  <p className='texto-encima2'>Millones de peliculas y programas por descubrir</p>
+  <h1  className='texto-encima '>BIENVENIDOS</h1>
+  <p className='texto-encima2 '>Millones de peliculas y programas por descubrir</p>
 </div>
 </div>
   )
