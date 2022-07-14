@@ -21,14 +21,13 @@ const Navbar = () => {
           <Link className="nav-link active ms-5" aria-current="page" to="/appMovieReact">Inicio</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" to="/peliculas">Peliculas</Link>
+          <Link className="nav-link active ms-5" to="/peliculas">Peliculas</Link>
         </li>
       </ul>
-      <form className="d-flex me-5" role="search">
+      <form className="d-flex me-4 w-25" role="search">
         <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" onChange={e=>setSearch(e.target.value)}/>
-        
       </form>
-      <Link className='me-5 i' to='/favoritos'><span>❤️ {fav}</span></Link>
+      <Link className='mx-2 i' to='/favoritos'><span>❤️ {fav}</span></Link>
     </div>
   </div>
 </nav>

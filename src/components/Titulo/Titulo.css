@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 .img{
     height: 600px;
     width: 100%;
-    
-    
-}
-.saludo{
-    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .contenedor{
@@ -17,67 +13,70 @@
 
 .texto-encima{
     position: absolute;
-    top: 14%;
-    font-size: 100px;
-    right: 22%;
+    top: 48%;
+    right: 65%;
     z-index: 1;
-    font-family: 'Orbitron', sans-serif;
-    color: rgb(250, 249, 249);
-        text-shadow: -1px 1px 0 #000,
-                          1px 1px 0 #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000;
-    
-    
+    font-size: 77px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(233, 238, 238);
+    text-align: center;
+    width: 512px;
+    margin-top: 10px;
+    height:90px;
+    background-color:rgba(27, 26, 26, 0.43);
 }
 
 .texto-encima2{
     position: absolute;
-    top: 26%;
-    font-size: 25px;
-    right: 25%;
+    top: 60%;
+    font-size: 20px;
+    right: 65%;
     z-index: 1;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Oswald', sans-serif;
     padding-top: 24px;
-    color: rgb(250, 249, 249);
-        text-shadow: -1px 1px 0 #000,
-                          1px 1px 0 #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000;
-    
+    color: rgb(1, 1, 1);
+    text-transform: uppercase;
+    width: 510px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    background-color:rgba(249, 245, 245, 0.663);
 }
 
 
 @media  (max-width: 600px){
     .texto-encima{
-        font-size: 22px;
-        top: 20%;
-        left: 15%;
-        color: rgb(250, 249, 249);
-        text-shadow: -1px 1px 0 #000,
-                          1px 1px 0 #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000;
+        position: absolute;
+        top: 14%;
+        right: 5%;
+        z-index: 1;
+        font-size: 30px;
+        font-weight: bolder;
+        font-family: 'Oswald', sans-serif;
+        font-size: rgb(229, 220, 220);
+        text-align: center;
+        width:216px;
+        margin-top: 10px;
+        height:35px;
+        background-color:black;
     
     }
     .texto-encima2{
         font-size: 14px;
-        top: 22%;
+        top: 30%;
         right: 2%;
         left: 10%;
         padding: 20px;
-        color: rgb(250, 249, 249);
-        text-shadow: -1px 1px 0 #000,
-                          1px 1px 0 #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000;
-        
+        font-family: 'Oswald', sans-serif;
+        color: rgb(250, 249, 249); 
+        font-weight: bolder; 
+        text-align: end;
     }
+
     .img{
-        
         height: 300px;
-    }
-    .saludo{
-        background-color: rgba(0, 0, 0, 0.3);
     }
 }

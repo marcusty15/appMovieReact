@@ -29,9 +29,11 @@ const Titulo = () => {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
-<div className='saludo'>
-  <h1  className='texto-encima '>BIENVENIDOS</h1>
-  <p className='texto-encima2 '>Millones de peliculas y programas por descubrir</p>
+<div>
+  <div>
+  <h1 className='texto-encima'>BIENVENIDOS</h1>
+  </div>
+  <p className='texto-encima2'>Millones de películas y programas por descubrir</p>
 </div>
 </div>
   )

@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 .link{
-    font-family: 'Orbitron', sans-serif;
-    background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    font-size: 50px
 }
 
 .link2{
-    font-family: 'Orbitron', sans-serif;
-    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Oswald', sans-serif;
+    background-color: aliceblue;
+    height: 150px;
+    font-weight: bolder;
+    font-size: 50px;
+    padding-top: 40px;
 }
 
-.boton{
+.btn{
     font-size: 20px;
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 4%, rgba(252,176,69,1) 100%);
-    font-weight: 700;
-
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    font-weight: bolder;
 }

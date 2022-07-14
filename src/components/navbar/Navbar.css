@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento+Sans&display=swap');
+
 .navbar{
-    background-color: rgb(6, 65, 47);
+    font-weight: bolder;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .i{
     text-decoration: none;
-    color: white;
+    color: rgb(245, 243, 243);
+    font-size: 16px;
 }
+
 .logo{
     width: 60px;
 }

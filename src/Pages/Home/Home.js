@@ -10,7 +10,7 @@ const Home = () => {
   const {peliculasEncontradas, peliculasEncontradas3} = useContext(Context);
   
   //variables creadas para filtrar las peliculas con mayor valoracion de votos
-  const filmspopulares = peliculasEncontradas.filter((film) => film.vote_average >= 7.5);
+  const filmspopulares = peliculasEncontradas.filter((film) => film.vote_average >= 7);
   const filmspopulares2 = peliculasEncontradas3.filter((film) => film.vote_average >= 7.5);
 
   return (
@@ -18,7 +18,7 @@ const Home = () => {
       <div className="pt-1">
         <Titulo />
       </div>
-      <h2 className="text-center mb-5 mt-5 link">PELICULAS POPULARES</h2>
+      <h2 className="text-center my-5 link">PELÍCULAS POPULARES</h2>
       <div className=" bg-dark info pt-5">
         <div className="container">
           <div className="d-flex flex-wrap justify-content-around mb-5">
@@ -31,7 +31,7 @@ const Home = () => {
             )}
           </div>
         </div>
-        <h2 className="text-center mb-5 mt-5 link2">PELICULAS TOP</h2>
+        <h2 className="text-center mb-5 link2">LAS MÁS VISTAS</h2>
         <div className="container">
           <div className="d-flex flex-wrap justify-content-around mb-5">
             {filmspopulares2.length > 0 ? (
@@ -44,7 +44,7 @@ const Home = () => {
           </div>
 
           <div className="d-flex justify-content-center">
-            <Link to="/peliculas" className="mb-5 link boton btn ">
+            <Link to="/peliculas" className="mb-5 btn" type="button">
               VER TODAS
             </Link>
           </div>
