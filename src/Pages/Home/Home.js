@@ -10,8 +10,8 @@ const Home = () => {
   const {peliculasEncontradas, peliculasEncontradas3} = useContext(Context);
   
   //variables creadas para filtrar las peliculas con mayor valoracion de votos
-  const filmspopulares = peliculasEncontradas.filter((film) => film.vote_average >= 7);
-  const filmspopulares2 = peliculasEncontradas3.filter((film) => film.vote_average >= 7.5);
+  const filmspopulares = peliculasEncontradas.filter((film) => film.vote_average >= 7.7);
+  const filmspopulares2 = peliculasEncontradas3.filter((film) => film.vote_average >= 8);
 
   return (
     <div className="mt-5">

@@ -6,11 +6,10 @@ import './Peliculas.css'
 const Peliculas = () => {
     const {peliculasEncontradas,peliculasEncontradas2, movieList, listadoPeliculas} = useContext(Context)
 
-   
 console.log(movieList)
   return (
     
-    <div className='container ct '>
+    <div className='container ct'>
     <div className='d-flex flex-wrap justify-content-around'>
     {
         peliculasEncontradas.length > 0 ?
@@ -34,9 +33,9 @@ console.log(movieList)
       
     }
     </div >
-    <div className='d-flex flex-wrap justify-content-around'>
-    <button className='btn' onClick={listadoPeliculas}> ver mas</button>
-    </div>
+      <div className='d-flex justify-content-around'>
+        <button className='mt-5 btn mb-5' onClick={listadoPeliculas}>VER MAS</button>
+      </div>
     </div>
   )
 }

@@ -8,7 +8,7 @@ import './Detalle.css'
 const Detalle = () => {
     const {films, movieList, moviesTop} = useContext(Context)
     const {id} = useParams()
-   
+
     const result = films.filter((movie) => (movie.id==id))
     const result2 = movieList.filter((movie) => (movie.id==id))
     const result3 = moviesTop.filter((movie) => (movie.id==id))

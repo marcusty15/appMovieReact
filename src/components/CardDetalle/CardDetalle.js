@@ -23,7 +23,7 @@ const CardDetalle = (props) => {
                 <h2 className='texto2 '>{overview}</h2>
                 <h2 className='texto2 '>calificacion: ⭐ {vote_average}</h2>
                 <h2 className='texto2 '> Fecha de lanzamiento: {release_date}</h2>
-                <button className='icon shadow ' onClick={() => favAdd(movie)}><span aria-label={label} role='img'>{emoji}</span></button>
+                <button className='icon shadow' onClick={() => favAdd(movie)}><span aria-label={label} role='img'>{emoji}</span></button>
                 <Link className='btn boton  shadow ' to='/appMovieReact'>Volver</Link>
             </div>
         </div>

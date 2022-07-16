@@ -21,12 +21,12 @@
     outline: 0px solid transparent;   
     border: 5px solid; 
     
-  border-image: linear-gradient(45deg, purple, orange) 1;
+    border-image: linear-gradient(45deg, purple, orange) 1;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     transform: scale(1.1);
     
-  }
+}
 
 .titulo{
     font-size: 14px;
@@ -40,8 +40,6 @@
     text-decoration: none;
     color: black;
 }
-
-
 
 .contenedor{
     

@@ -20,7 +20,7 @@ const Favoritas = () => {
           />
         ))
       ) : (
-        <p className="tx  ">No ha agregado una pelicula favorita</p>
+        <p className="tx">No ha agregado una pelicula favorita</p>
       )}
       
     </div>

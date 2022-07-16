@@ -1,5 +1,11 @@
 .footer{
-    background-color: white;
-    padding: 20px;
+    color: aliceblue;
     font-size: 15px;
+    padding: 45px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.background{
+    background-color: rgb(32, 31, 31);
 }
